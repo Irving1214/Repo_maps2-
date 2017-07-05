@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>FAQS</title>
+		<link rel="stylesheet" href="css/styles.css"> 
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	</head>	
+<style type="text/css">
+	@media screen and (max-width: 270px) {	
+.subTree>a {
+    color: white !important;
+    padding: 0;
+    padding-left: 1em;
+}}
+	@media screen and (max-width: 430px) {	
+		.encabezado {
+	    font-size: 1em;
+	}
+	.header-num {
+	    font-size: .5em;
+	    line-height: 2em;
+	}
+	}
+	.dropdown-cont>a {
+	    font-size: 15px;
+	    height: auto;
+	    margin-top: 1em;
+	     height: 30px;
+	    line-height: 20px;
+	}
+	.dropdown-cont>a:hover{
+		background: transparent;
+		color: black;
+	}
+	.dropbtn {
+	    background-color: transparent;
+	    color: white;
+	    border: none;
+	    cursor: pointer;
+	    font-size: 17px;
+	    margin-top: -1em;margin-right: .5em; }
+	.respsub{
+		padding: 0;
+	}    
+	.dropdown:hover .dropdown-cont {
+	    display: block;
+	}
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+	.dropdown-cont{    display: none;}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	    font-size: 13px;
+	    width: 120px;
+	    text-align: center;
+	}
+	.dropdown-content a {
+	    color: white;
+	    text-decoration: none;
+	    display: block;
+	    background:#2970ca; 
+	   height: 40px;
+	    line-height: 40px;}
+	.topnav.menu.flex>div {
+	    display: inline-flex;
+	}
+	.dropdown-content a:hover {background-color: #333d47;}
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+	.dropdown:hover .dropbtn {
+	    background-color: #2970ca;
+	}
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	    line-height: 3.7em;
+	}
+	.topnav {
+	    overflow: hidden;
+	    background-color: #2970ca;
+	    word-spacing: .5em;
+	}
+	@media screen and (max-width: 910px) {
+	.dropbtn{    padding: 8px 8px 8px 32px;     margin-bottom: 1em;
+	    margin-top: 1em;}
+	.dropdown { line-height: 0; margin-top:2em;}
+	}
+</style>
+	<body>
+		<div class="wrapper">
+			<header class="">
+				<a href="http://revimex.mx/newindex.php"><img src="imgs/home/logoCfondo.jpg" alt="" class="logo"></a>
+				
+				<div class="container">
+					<div class="header-num">
+						<p class="white-txt">
+							Teléfono
+							<b>01 800 2000 0440</b>
+						</p>
+					</div>
+				</div>
+				<div id="responsive-menu" class="respMenu ">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<!-- <a href="#">Conócenos</a> -->
+					<div class="dropdown">
+					  <div class="dropbtn">Conócenos</div>
+					  <div class="dropdown-cont">
+					    <a href="mision.html"> - Misión</a>
+					    <a href="requisitos.html"> - ¿Qué necesitas?</a>
+					  </div>
+					</div>
+					<a href="#">Propiedades</a>
+					<a href="recomendadores.html">Recomendadores</a>
+					<a href="#">Vacantes</a>
+					<a href="#"><img src="imgs/icons/facebook.png" width="20px"> </a>
+					<a href="#"><img src="imgs/icons/twitter.png" width="20px"> </a>
+				</div>
+				<span class="burger hidden-lg" onclick="openNav()">&#9776;</span>
+				<div class="header-menu hidden-xs">
+				<div class="dropdown">
+						  <button class="dropbtn">Conócenos</button>
+						  <div class="dropdown-content">
+						    <a href="mision.html">Misión</a>
+						    <a href="requisitos.html">¿Qué necesitas?</a>
+						  </div>
+						</div>
+					<div class="topnav menu flex white-txt">
+						
+						<div><a href="#"> Propiedades</a></div>
+						<div><a href="recomendadores.html"> Recomendadores</a></div>
+						<div><a href="#"> Vacantes</a></div>
+						<div class="social-media"><a href="#"><img src="imgs/icons/facebook.png" width="20px"> </a></div>
+						<div class="social-media"><a href="#"><img src="imgs/icons/twitter.png" width="20px"> </a></div>
+					</div>
+				</div>
+			</header>
+		<!--/Header-->	
+			<div class="subheader">
+				<div class="subTree">
+					<a href="http://revimex.mx/">Inicio</a> |  
+					<a href="#"><u>Preguntas frecuentes</u></a>
+				</div>
+			</div>
+			<div class="privacyBg">
+				<div class="contenedor">
+				<h1 class="centered txtFootc">PREGUNTAS FRECUENTES</h1><br><br>
+					<p>
+					<p class="txtYellow">¿Cómo puedo saber si soy candidato para una casa REVIMEX?</p>
+					Consulta en nuestra página de inicio tu precalificación, si este te da un monto mayor o igual de $ 200,000 pesos o tienes más de 116 puntos Infonavit, contacta a uno de nuestros asesores para que te ayude a encontrar la casa de tus sueños. 
+					<br><br>
+					<p class="txtYellow">¿REVIMEX ofrece algún tipo de crédito?</p>
+					No los otorgamos pero si los aceptamos, en REVIMEX, puedes comprar tu casa con créditos : Infonavit, Fovissste y bancarios.
+					<br><br>
+					<p class="txtYellow">¿Aceptan subsidios?</p>
+					No, por el momento no aceptamos subsidios en REVIMEX, sin embargo siempre intentamos ayudar a nuestros clientes a conseguir su nuevo hogar.
+					<br><br>
+					<p class="txtYellow">¿Qué documentos necesito para obtener una casa?</p>
+					<ul class="yellow-li">
+
+					<li><span class="txtGray">Acta de nacimiento.</span></li>
+					<li><span class="txtGray">RFC Infonavit (vigente)</span></li>
+					<li><span class="txtGray">RFC SAT</span></li>
+					<li><span class="txtGray">IFE o INE (vigente)</span></li>
+					<li><span class="txtGray">Comprobante de domicilio (no mayor a 3 meses)</span></li>
+					<li><span class="txtGray">Precalificación Infonavit</span></li>
+					<li><span class="txtGray">CURP</span></li>
+					<br>
+					</ul>
+					<p class="txtYellow">¿REVIMEX se hace cargo de las deudas de la casa?</p>
+					Para apoyar a nuestros clientes, nos hacemos cargo de las deudas de agua y predio que tenga la casa. Aplican restricciones
+					<br><br>
+					<p class="txtYellow">¿Cuánto tiempo tardan en entregar la casa?</p>
+					En un escenario óptimo el tiempo de entrega es de dos semanas
+					<br><br>
+					<p class="txtYellow">¿Necesito asesoría legal para comprar una casa?</p>
+					No, nosotros asesoramos a nuestros clientes en todo el proceso de compra, hasta el momento de recibir las escrituras de su casa.</p>		
+				</div>
+			</div>
+
+			
+			<!--FOOTER-->
+			
+			<div class="footer">
+				<span style="padding: 0.5em; display: block;"><a style="color: white" href="aviso-privacidad.html">
+				Aviso de Privacidad </a>| <span> REVIMEX 01 800 200 0440  </span></span>
+				<div class="social-media">
+					<a href="#"><img src="imgs/icons/facebook.png" width="20px"></a>
+					<a href="#"><img src="imgs/icons/twitter.png" width="20px"></a>
+					<a href="#"><img src="imgs/icons/instagram.png" width="20px"></a>
+				</div>	
+			</div>
+			<div class="footerdivider">Desarrollado por <a href="#">Gecco Corp</a></div>
+			
+		</div>
+	</body>
+</html>
+<script>
+function openNav() {
+    document.getElementById("responsive-menu").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("responsive-menu").style.width = "0";
+}
+</script>

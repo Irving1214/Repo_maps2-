@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Retos en la vivienda - México 2017</title>
+		<link rel="stylesheet" href="css/styles.css"> 
+		<link rel="stylesheet" href="css/normalize.css"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	</head>	
+	 <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71967023-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> 
+<style type="text/css">
+	.requisitosBg {background-image: url('imgs/fold/bgrequisitos.jpg'); min-height: 600px;color: white;text-align: center; background-size: cover;}
+	.flex-container {
+	           display: -webkit-flex;
+	           display: flex;
+	           -webkit-flex-direction: row;
+	           flex-direction: row;
+	           -webkit-align-items: center;
+	           align-items: center;
+	           
+	           flex-wrap: wrap;
+	           min-width: 320px;
+	           max-width: 1220px;
+	           justify-content: center;
+	        }
+	        .flex-item {
+	        width: 45%;
+	        margin: 3px;
+	        padding: 10px 0 0 10px;
+	        }
+	        
+	        .info-container{
+	            display: inline-block;
+	            vertical-align: top;
+	            padding: 0 0 0 5px;
+	            -moz-box-sizing: border-box;
+	            -webkit-box-sizing: border-box;
+	            box-sizing: border-box;
+	        }
+
+	        .info-container p{
+	            padding: 0;
+	            margin: 0 0 10px;
+	        }
+
+	p.txtYellow {
+	    font-size: 2.2em;
+	    margin-top: .5em;
+	    color: #fab429;
+	    text-align: left;
+	    margin-bottom: 0;
+	    font-weight: bold;
+	}
+	p.bigTxt {
+	    font-size: 1.3em;
+	    font-weight: bold;
+	        text-align: left;
+	}
+	.iconp1{position: relative;right: 5em;}
+	.iconp1i{position: relative;right: 4em;}
+	.iconp4{position: relative;right: 7%;}
+	.iconpi4{position: relative;right: 7.5%;}
+	.p3{padding-left: 3em;}
+	.justify{    text-align: justify;}
+	.left{text-align: left;}
+	 .f3{font-size: 3em !important}
+
+	@media screen and (max-width: 970px) {
+	 .flex-item {width: 100%;}
+	}
+	@media screen and (max-width: 430px) {
+	 .flex-item {width: 100%; padding-right: 2em;}
+	 .iconp1{right: 0;}
+	 .iconp1i{right: 0;}
+	 .iconp4{right: 0;}
+	.iconpi4{right: 0;}
+	p.bigTxt.f3 {font-size: 1.8em !important;}
+	.info-container{display: block;text-align: center;margin-left: 10%;}
+	span.grandote {
+	    font-size: 1em;}
+	    .header-num {
+	    font-size: .5em;
+	    line-height: 2em;
+	}
+	}
+	@media screen and (max-width: 430px) {	
+		.encabezado {
+	    font-size: 1em;
+	}
+	.header-num {
+	    font-size: .5em;
+	    line-height: 2em;
+	}
+	}
+	.dropdown-cont>a {
+	    font-size: 15px;
+	    height: auto;
+	    margin-top: 1em;
+	     height: 30px;
+	    line-height: 20px;
+	}
+	.dropdown-cont>a:hover{
+		background: transparent;
+		color: black;
+	}
+	.dropbtn {
+	    background-color: transparent;
+	    color: white;
+	    border: none;
+	    cursor: pointer;
+	    font-size: 17px;
+	    margin-top: -1em;margin-right: .5em; }
+
+	.dropdown-cont {
+	    display: none;}
+	.respsub{
+		padding: 0;
+	}    
+	.dropdown:hover .dropdown-cont {
+	    display: block;
+	}
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+	.dropdown-cont{    display: none;}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	    font-size: 13px;
+	    width: 120px;
+	    text-align: center;
+	}
+
+
+	.dropdown-content a {
+	    color: white;
+	    text-decoration: none;
+	    display: block;
+	    background:#2970ca; 
+	    height: 40px;
+	    line-height: 40px;
+	}
+
+	.topnav.menu.flex>div {
+	    display: inline-flex;
+	}
+	.dropdown-content a:hover {background-color: #333d47;}
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+	    background-color: #2970ca;
+	}
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	    line-height: 3.7em;
+
+	}
+	.topnav {
+	    overflow: hidden;
+	    background-color: #2970ca;
+	    word-spacing: .5em;
+	}
+	@media screen and (max-width: 910px) {
+	.dropbtn{    padding: 8px 8px 8px 32px;     margin-bottom: 1em;
+	    margin-top: 1em;}
+	.dropdown { line-height: 0; margin-top:2em;}
+
+	}
+
+	.flex50 {
+	    flex: 50%;
+	}
+	.grayBg {
+	    background: #bbb;
+	    padding-bottom: 1em; 
+	}
+	.paddingrec{padding: .5em 4em;}
+	select#txt_est{
+		width: 100%;
+	    font-size: 14px;
+	    background: white;
+	    border: 0;
+	    border-radius: 0;
+	    height: 40px;
+	    margin: 0 0.5em 0 0;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    padding-left: 10px;
+	    color: gray;
+	}
+	.left{ text-align:left; margin-left: 1.2em;}
+	.f2{font-size: 2em;
+	    margin: 0;
+	    margin-left: 1.2em;
+	    padding: 0.5em 0;}
+	.gray{    color: #394049}
+
+	.bggray {
+	    background: #d1d1d1;
+	    padding-bottom: 1em;
+	    flex: 50%;
+	}
+	@media screen and (max-width: 768px) {
+		.formContainer {flex-direction: column;}
+		span.txtBday{display: block;}
+		.paddingrec {padding: .5em 3em 0 1em;}
+		p.txtYellow {font-size: 1.3em;}
+		.btnContainers {display: block;}
+		.clear-form.btn-blue {width: inherit;}
+		input.formHome.btn-yellow {width: inherit !important;}
+		span.grandote {font-size: 1.5em;}
+	}
+	@media screen and (max-width: 1200px) {
+		span.txtBday{display: block;}
+	}
+
+	.nssIframe{display: none;}
+</style>
+	<body>
+		<div class="wrapper bgWhite">
+			<header class="">
+				<a href="http://revimex.mx/index.php"><img src="imgs/home/logoCfondo.jpg" alt="" class="logo"></a>
+				
+				<div class="container">
+					<div class="header-num">
+						<p class="white-txt">
+							Teléfono
+							<b>01 800 200 0440</b>
+						</p>
+					</div>
+				</div>
+				<div id="responsive-menu" class="respMenu ">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<!-- <a href="#">Conócenos</a> -->
+					<div class="dropdown">
+					  <div class="dropbtn">Conócenos</div>
+					  <div class="dropdown-cont">
+					    <a href="mision.html"> - Misión</a>
+					    <a href="requisitos.html"> - ¿Qué necesitas?</a>
+					  </div>
+					</div>
+					<a href="mapas2.html">Propiedades</a>
+					<a href="recomendadores.php">Recomendadores</a>
+					<a href="vacantes.php>Vacantes</a>
+					<a href="#"><img src="imgs/icons/facebook.png" width="20px"> </a>
+					<a href="#"><img src="imgs/icons/twitter.png" width="20px"> </a>
+				</div>
+				<span class="burger hidden-lg" onclick="openNav()">&#9776;</span>
+
+				<div class="header-menu hidden-xs">
+				<div class="dropdown">
+						  <button class="dropbtn">Conócenos</button>
+						  <div class="dropdown-content">
+						    <a href="mision.html">Misión</a>
+						    <a href="requisitos.html">¿Qué necesitas?</a>
+						  </div>
+						</div>
+					<div class="topnav menu flex white-txt">
+						
+						<div><a href="#"> Propiedades</a></div>
+						<div><a href="#"> Recomendadores</a></div>
+						<div><a href="#"> Vacantes</a></div>
+						<div class="social-media"><a href="#"><img src="imgs/icons/facebook.png" width="20px"> </a></div>
+						<div class="social-media"><a href="#"><img src="imgs/icons/twitter.png" width="20px"> </a></div>
+					</div>
+				</div>
+			</header>
+			<div class="subheader">
+				<div class="subTree">
+					<a href="http://revimex.mx/index.php">Inicio</a> |  
+					<a href="#"><u>Noticias</u></a>
+				</div>
+			</div>				
+			<div class="padContainer">
+				<div class="m-top2 p-left1">
+					<a href="noticias.html"><button class="clear-form btn-blue btnBack">Regresar a noticias</button></a>
+				</div>
+				<!-- TÍTULO DE NOTICIA -->
+						<div class="encabezado w70"><span class="grandote1">Infonavit empezará el cambio de créditos en salarios a pesos este mes</span class="grandote"> </div>
+				<img width="70%" src="../images/nota24.jpg" class="img-centered">
+					<div class="new">
+						CIUDAD DE MÉXICO.- A partir de este mes, el Instituto del Fondo Nacional de la Vivienda para los Trabajadores (Infonavit) revisará los créditos hipotecarios que ha otorgado en salarios mínimos, para analizar la viabilidad de convertirlos a pesos, con el fin de evitar afectaciones a los derechohabientes por los incrementos anuales en el salario
+						<br><br>
+						“Estamos trabajando para que sean la mayoría de los créditos en pesos y posiblemente a la larga estaremos haciendo una evaluación y puedan ser ya la totalidad de los créditos en pesos”, dijo Alejandro Murat, director general del Infonavit, entrevistado al término de la firma de un convenio con la Secretaría del Trabajo y Previsión Social para dar créditos a discapacitados.
+						<br><br>
+						El directivo señaló que desde este mes el instituto comenzará la revisión de los créditos que podrían ser convertidos de salarios mínimos a pesos, no obstante, apuntó que se analizará “caso por caso” ya que habrá ocasiones en que la conversión no beneficie a los derechohabientes.						
+					</div>	
+			</div>		
+			<div class="m-top2 p-left1">
+					<a href="noticias.html"><button class="clear-form btn-blue btnBack">Regresar a noticias</button></a><br><br>
+			</div>				
+			<!--FOOTER-->
+			<div class="yellowline"></div>
+			<div class="footer">
+				<span style="padding: 0.5em; display: block;"><a style="color: white" href="aviso-privacidad.html">
+				Aviso de Privacidad </a>| <span> REVIMEX 01 800 200 0440  </span></span>
+				<div class="social-media">
+					<a href="#"><img src="imgs/icons/facebook.png" width="20px"></a>
+					<a href="#"><img src="imgs/icons/twitter.png" width="20px"></a>
+					<a href="#"><img src="imgs/icons/instagram.png" width="20px"></a>
+				</div>	
+			</div>
+			<div class="footerdivider">Desarrollado por <a href="#">Gecco Corp</a></div>
+			
+		</div>
+	</body>
+</html>
+
+<script>
+function openNav() {document.getElementById("responsive-menu").style.width = "250px";}
+function closeNav() {document.getElementById("responsive-menu").style.width = "0";}
+function showIframe() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+$(document).ready(function(){
+  $(".showFrame").click(function(){
+    // $(".hiddenlinks").attr('');
+        $(".nssIframe").slideToggle();
+
+  });
+});
+</script>
