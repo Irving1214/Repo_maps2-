@@ -306,6 +306,13 @@ function nombreMunicipio(estado) {
  */
 function modalListeners(index) {
         $("#card_cubes_" + index + ", #back_to_" + index).click(function () {
+            // Sale de la vista de Street maps
+            map.getStreetView().setVisible(false);
+
+            // Resetea el slider
+            slider.noUiSlider.updateOptions({
+                start: [0, 1500000]
+            });
 
             $('#casas').appendTo('#house_cards');
             $("#house_description_" + index).hide();
@@ -313,10 +320,24 @@ function modalListeners(index) {
             $('#casas_cercanas').hide();
             setDefaulBehaviorMarkers();
             $("#titulocercanas").hide();
-            reCentrar();
+            if(map.getZoom()==17){
+                stateCenter(index);
+                
+                
+                
+            }
+            else{
+                reCentrar();
+            }
             changePlazaToColonia(false);
             var cent = false;
             $("#modalFavoritos" + index).hide();
+
+            if (markesrsSerives.length > 0) {
+                for (var i = 0; i < markesrsSerives.length; i++) {
+                    markesrsSerives[i].setMap(null);
+                }
+            }
         });
 
         $("#heart_" + index).click(function () {
@@ -361,4 +382,47 @@ function modalListeners(index) {
         $("#KeepWhatching_" + index).click(function () {
             $("#modalFavoritos" + index).hide();
         });
+}
+
+function changeButtonColor(id, index) {
+    var button = ["restaurantes_", "escuelas_", "hospitales_", "cormercio_", "super_", "parques_"];
+
+
+    if ("restaurantes_" + index == id) {
+        console.log(10);
+        $("#img_restaurantes_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_RESTAURANTES-ON.png");
+    } else {
+        console.log(20);
+        $("#img_restaurantes_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_RESTAURANTES-OFF.png");
+    }
+
+    if ("escuelas_" + index == id) {
+        $("#img_escuelas_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_ESCUELAS-ON.png");
+    } else {
+        $("#img_escuelas_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_ESCUELAS-OFF.png");
+    }
+
+    if ("hospitales_" + index == id) {
+        $("#img_hospitales_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_HOSPITALES-ON.png");
+    } else {
+        $("#img_hospitales_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_HOSPITALES-OFF.png");
+    }
+
+    if ("cormercio_" + index == id) {
+        $("#img_cormercio_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_COMERCIALES-ON.png");
+    } else {
+        $("#img_cormercio_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_COMERCIALES-OFF.png");
+    }
+
+    if ("super_" + index == id) {
+        $("#img_super_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_SUPER-ON.png");
+    } else {
+        $("#img_super_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_SUPER-OFF.png");
+    }
+
+    if ("parques_" + index == id) {
+        $("#img_parques_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_PARQUES-ON.png");
+    } else {
+        $("#img_parques_" + index).attr("src", "images/IconoTarjetaDinamica/ICONS-PROPIEDADES-WEB_PARQUES-OFF.png");
+    }
 }

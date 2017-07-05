@@ -311,6 +311,11 @@ margin-top: 5%;
             margin-left: 15%;
             margin-right: 15%;
         }
+        #map {
+            margin-left: -3% !important;
+            width: 100% !important;
+            margin-bottom: 0%;
+         }
         }
 
          @media (min-width: 1400px) {
@@ -350,12 +355,6 @@ margin-top: 5%;
             }
 
         }
-        @media (min-width: 992px)
-      
-       .col-md-12 {
-        width: 80%;
-          margin-left: 10%;
-     }
 
     </style>
     <script>
@@ -423,7 +422,7 @@ margin-top: 5%;
                                                                                alt="" class="logo"></a>
 
             <ul class="nav navbar-nav navbar-center">
-                <li class="tipo" id="cuatro_carlos"><a href="http://www.revimex.mx/sitio/recomendadores.php">RECOMENDADORES </a></li>
+                <li class="tipo" id="cuatro_carlos"><a href="http://www.revimex.mx/sitio/mapas2.html">RECOMENDADORES </a></li>
                 <li class="tipo" id="cinco_carlos"><a href="http://revimex.mx/casos.php">CASOS DE ÉXITO </a></li>
                 <li class="tipo" id="seis_carlos"><a href="http://revimex.mx/sitio/vacantes.php">VACANTES </a></li>
             </ul>
@@ -488,8 +487,11 @@ margin-top: 5%;
 <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw6cDizVt_aD3GPH7murcfwz-vh140lpg&libraries=places&callback=initMap"></script>
 <script src="map/js/wNumb.js"></script>
-<script src="map/js/propiedades.js"></script>
+<script src="map/js/propiedades_main.js"></script>
+<script src="map/js/propiedades_mapa.js"></script>
 <script src="map/js/modalPropiedad.js"></script>
+<script src="map/js/box_listeners.js"></script>
+<script src="map/js/markers_map.js"></script>
 <div class="loading" id="wait"></div>
 
 </body>
